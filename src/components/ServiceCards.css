@@ -1,0 +1,170 @@
+/* ================================
+   SERVICE SECTION
+================================ */
+.service-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+  background: linear-gradient(to bottom, #f9fffb, #f1f5f9);
+}
+
+/* ================================
+   WRAPPER
+================================ */
+.service-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ================================
+   SLIDER
+================================ */
+.service-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 16px 56px;
+}
+
+.service-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================================
+   SERVICE CARD
+================================ */
+.service-card {
+  min-width: 280px;
+  max-width: 280px;
+  min-height: 300px;
+
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 20px;
+
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+
+  cursor: pointer;
+  transition: all 0.35s ease;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.12);
+  border-color: #22c55e;
+}
+
+/* ================================
+   ICON
+================================ */
+.service-icon {
+  font-size: 36px;
+  color: #C4302C;
+  margin-bottom: 14px;
+}
+
+/* ================================
+   TITLE
+================================ */
+.service-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #090971;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* ================================
+   DESCRIPTION
+================================ */
+.service-desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ================================
+   NAVIGATION ARROWS (DESKTOP + MOBILE)
+================================ */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #739131;
+  color: #ffffff;
+  border: 1px solid #739131;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.3s ease;
+}
+
+.nav-arrow.left {
+  left: 4px;
+}
+
+.nav-arrow.right {
+  right: 4px;
+}
+
+.nav-arrow:hover {
+  background: #739131;
+  color: #ffffff;
+  border-color: #739131;
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* =====================================================
+   📱 MOBILE (<= 640px)
+   → 2 cards + arrows visible
+===================================================== */
+@media (max-width: 640px) {
+  .service-slider {
+    padding: 12px 40px;
+    gap: 14px;
+  }
+
+  .service-card {
+    min-width: calc(50vw - 32px);
+    max-width: calc(50vw - 32px);
+    min-height: 280px;
+  }
+
+  .nav-arrow {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+
+/* =====================================================
+   📱 SMALL PHONES (<= 420px)
+   → 1.2 cards + arrows
+===================================================== */
+@media (max-width: 420px) {
+  .service-slider {
+    padding: 12px 36px;
+  }
+
+  .service-card {
+    min-width: 78vw;
+    max-width: 78vw;
+  }
+
+  .nav-arrow {
+    width: 32px;
+    height: 32px;
+  }
+}

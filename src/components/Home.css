@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=SUSE:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=SUSE:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+.About{
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.About1{
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.GetfontHome{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style:normal;
+}
+.GetfontHomeDash{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.GetfontHomeChat{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.GetFontSol{
+   font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.GetfontHomeChat1{
+   font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bgimg {
+  position: relative;
+  
+  background-image: url('../Images/b.png');
+
+  background-size: cover;
+  background-position:bottom;
+  background-repeat: no-repeat;
+}
+
+
+
+.wp{
+  background-image: url(../Images/Wp.jpg);
+}
+.sc{
+  transform: scale(1.5);
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+video:fullscreen {
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}

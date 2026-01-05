@@ -1,0 +1,50 @@
+@keyframes rotatePause {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  40% {
+    transform: rotate(90deg); /* pause */
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  80% {
+    transform: rotate(180deg); /* pause */
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.ig{
+  transform: scale(2);
+}
+/* Optional: add 360-degree loop */
+@keyframes rotateFullPause {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  40% {
+    transform: rotate(90deg);
+  }
+  60% {
+    transform: rotate(90deg);
+  }
+  80% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.rotating-image {
+  animation: rotatePause 7s linear infinite;
+  transform-origin: center center;
+  transform: scale(1.6);
+}

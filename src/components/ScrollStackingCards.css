@@ -1,0 +1,118 @@
+/* ================= CONTAINER ================= */
+.cards-container {
+  position: relative;
+  padding: 40px 0;
+}
+
+/* ================= CARD BASE ================= */
+.card {
+  position: relative;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto 40px auto;
+  padding: 1.5rem;
+  padding-top: 2.5rem;
+  background: #f8f9fb;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* ✅ MOBILE STACKING (ADDED) */
+@media (max-width: 767px) {
+  .card {
+    position: sticky;
+    top: 14%;
+    z-index: 5;
+  }
+}
+
+/* ================= DESKTOP STACKING (UNCHANGED) ================= */
+@media (min-width: 768px) {
+  .cards-container {
+    padding: 200px 0;
+  }
+
+  .card {
+    position: sticky;
+    top: 20%;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 60px;
+    padding: 2rem;
+    padding-top: 2rem;
+    z-index: 6;
+  }
+
+  .card.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+/* ================= IMAGE ================= */
+.image-container {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= SCROLL STATES (DESKTOP ONLY – UNCHANGED) ================= */
+@media (min-width: 768px) {
+  .card.inactive {
+    opacity: 0.6;
+    transform: scale(0.97);
+  }
+
+  .card.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+  }
+}
+
+/* ================= MOBILE IMAGE FIX ================= */
+/* ================= MOBILE IMAGE WIDTH FIX (NO HEIGHT CHANGE) ================= */
+@media (max-width: 767px) {
+  .image-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* ================= TEXT CONSISTENCY FIX ================= */
+.text-content h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.text-content h4 {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.text-content ul li {
+  font-size: 16px;
+  line-height: 1.6;
+}
