@@ -9,7 +9,7 @@ import CareersAtDivySolar from './CareersAtDivySolar';
 
 const Career = () => {
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 pt-8 pb-12 About">
+    <div className="bg-gradient-to-br from-gray-50 to-gray-100 pt-1 pb-12 About">
       
       {/* ================= HERO ================= */}
       {/* <motion.div
