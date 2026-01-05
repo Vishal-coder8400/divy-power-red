@@ -33,7 +33,7 @@ const ThirdService = () => {
 
             {/* Services Grid */}
             <section className="max-w-7xl mx-auto px-6 pt-12">
-                <h2 className="text-3xl font-bold text-center text-black mb-10"> Our Services</h2>
+                <h2 className="text-3xl font-bold text-center text-[#090971] mb-10"> Our <span className="text-[#739131]">Services</span></h2>
                
             </section>
 
@@ -48,12 +48,12 @@ const ThirdService = () => {
                     className="rounded-xl mb-6 w-full max-h-[400px] object-cover"
                 />
 
-                <h2 className="text-2xl font-bold text-blue-900 mb-4">Operations & Maintenance</h2>
+                <h2 className="text-2xl font-bold text-[#090971] mb-4">Operations & Maintenance</h2>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                     Divy Power provides comprehensive maintenance and performance monitoring for your solar and power systems. Our O&M services are designed to detect issues early, prevent breakdowns, and ensure that your system runs safely, efficiently, and at peak output, year after year.
                 </p>
 
-                <ul className="list-disc pl-6 text-sm mb-4 text-gray-700 marker:text-blue-900">
+                <ul className="list-disc pl-6 text-sm mb-4 text-gray-700 marker:text-[#090971]">
                     <li>Regular Inspections & Preventive Maintenance</li>
                     <li> Real-Time Performance Monitoring</li>
                     <li>  Fast Issue Detection & Resolution</li>
@@ -64,7 +64,7 @@ const ThirdService = () => {
                     Our proactive approach helps identify potential faults before they become costly problems. With real-time monitoring and analytics, we maximize uptime and extend the life of your system.
                 </p>
 
-                <h3 className="text-lg font-semibold text-blue-900 ">Our Simple Four Steps</h3>
+                <h3 className="text-lg font-semibold text-[#090971] ">Our Simple Four Steps</h3>
                 <p className="text-sm text-gray-700">
                     From cleaning solar modules to replacing worn components, we ensure your system operates at peak efficiency year-round—with minimal disruptions and consistent energy output.
                 </p>
@@ -76,13 +76,13 @@ const ThirdService = () => {
                         <motion.div
                             key={idx}
                             whileHover={{ scale: 1.05 }}
-                            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
+                            className="bg-[#090971] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
                         >
                             {service.icon}
-                            <h3 className="font-semibold text-lg mt-4 mb-2 text-blue-900">{service.label}</h3>
+                            <h3 className="font-semibold text-lg mt-4 mb-2 text-white">{service.label}</h3>
                             <Link
                                 to={`/${service.path}`}
-                                className="mt-auto text-blue-900 font-medium hover:underline"
+                                className="mt-auto text-white font-medium hover:underline"
                             >
                                 Explore →
                             </Link>

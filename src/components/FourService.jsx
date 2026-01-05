@@ -32,7 +32,7 @@ const FourService = () => {
 
             {/* Services Grid */}
             <section className="max-w-7xl mx-auto px-6 pt-12">
-                <h2 className="text-3xl font-bold text-center text-black mb-10"> Our Services</h2>
+                <h2 className="text-3xl font-bold text-center text-[#090971] mb-10"> Our <span className="text-[#739131]">Services</span></h2>
               
             </section>
 
@@ -47,12 +47,12 @@ const FourService = () => {
                     className="rounded-xl mb-6 w-full max-h-[400px] object-cover"
                 />
 
-                <h2 className="text-2xl font-bold text-blue-900 mb-4">Annual Maintenance Contracts (AMC)</h2>
+                <h2 className="text-2xl font-bold text-[#090971] mb-4">Annual Maintenance Contracts (AMC)</h2>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                     We provide adaptable Annual Maintenance Contract(AMC) packages tailored for solar systems, diesel generators, and a range of other equipment, ensuring uninterrupted performance and long - term reliability.Our proactive approach focuses on preserving efficiency while minimizing operational disruptions, allowing you to enjoy a hassle - free power solution.
                 </p>
 
-                <ul className="list-disc pl-6 text-sm mb-4 text-gray-700 marker:text-blue-900">
+                <ul className="list-disc pl-6 text-sm mb-4 text-gray-700 marker:text-[#090971]">
                     <li>Concise & Professiona</li>
                     <li> Customer-Centric & Reassuring</li>
                     <li>  Technical & Detail-Oriented</li>
@@ -63,7 +63,7 @@ const FourService = () => {
                     With regular check-ups and preventive maintenance, we detect potential issues before they escalate, keeping your systems in peak condition. Our skilled technicians conduct detailed inspections, replacing worn-out components and fine-tuning performance to prevent unnecessary breakdowns.
                 </p>
 
-                <h3 className="text-lg font-semibold text-blue-900 ">Our Simple Four Steps</h3>
+                <h3 className="text-lg font-semibold text-[#090971] ">Our Simple Four Steps</h3>
                 <p className="text-sm text-gray-700">
                     In case of unexpected failures, we prioritize swift issue resolution through rapid troubleshooting and expert intervention. From minor adjustments to major repairs, we handle it all with professionalism—so you never have to worry about downtime affecting your operations
                 </p>
@@ -75,13 +75,13 @@ const FourService = () => {
                         <motion.div
                             key={idx}
                             whileHover={{ scale: 1.05 }}
-                            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
+                            className="bg-[#090971] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
                         >
                             {service.icon}
-                            <h3 className="font-semibold text-lg mt-4 mb-2 text-blue-900">{service.label}</h3>
+                            <h3 className="font-semibold text-lg mt-4 mb-2 text-white">{service.label}</h3>
                             <Link
                                 to={`/${service.path}`}
-                                className="mt-auto text-blue-900 font-medium hover:underline"
+                                className="mt-auto text-white font-medium hover:underline"
                             >
                                 Explore →
                             </Link>

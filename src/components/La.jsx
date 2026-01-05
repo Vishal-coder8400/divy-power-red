@@ -11,7 +11,7 @@ const La = () => {
         <>
             <div className="bg-gray-50 text-gray-800 font-sans py-20">
                 <header className="text-center py-10">
-                    <h1 className="text-4xl font-bold">Safety Solutions</h1>
+                    <h1 className="text-4xl font-bold text-[#090971]">Safety <span className="text-[#739131]">Solutions</span></h1>
                 </header>
 
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pb-16">
@@ -23,7 +23,7 @@ const La = () => {
                         />
 
                         <section>
-                            <h2 className="text-2xl font-semibold mb-4">Lightning Arrestor (LA)</h2>
+                            <h2 className="text-2xl font-semibold mb-4 text-[#090971]">Lightning Arrestor  <span className="text-[#739131]">(LA)</span></h2>
                             <p className=' text-gray-500'>
                                 Our lightning arrestors (LAs) provide essential protection against the destructive forces of lightning strikes, ensuring the safety and longevity of electrical systems and equipment. Designed to efficiently redirect lightning energy into the ground, our LAs serve as a critical defense mechanism, preventing severe damage caused by sudden electrical surges and voltage spikes.
                             </p>
@@ -51,10 +51,10 @@ const La = () => {
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                             {["STEP ONE", "STEP TWO", "STEP THREE"].map((step, i) => (
-                                <div key={i} className="bg-white p-6 rounded shadow text-center">
-                                    <div className="text-green-600 text-2xl font-bold">0{i + 1}</div>
+                                <div key={i} className="bg-[#090971] text-white p-6 rounded shadow text-center">
+                                    <div className="text-white text-2xl font-bold">0{i + 1}</div>
                                     <div className="mt-2 font-semibold">{step}</div>
-                                    <p className="text-sm text-gray-600 mt-1">
+                                    <p className="text-sm text-white mt-1">
                                         Tactical services through market web services
                                     </p>
                                 </div>
@@ -67,12 +67,12 @@ const La = () => {
                             <input
                                 type="text"
                                 placeholder="Enter Keyword"
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-[#090971] rounded"
                             />
                         </div>
 
                         <div className="bg-white p-6 rounded-2xl shadow-md space-y-4">
-                            <h3 className="text-2xl font-bold text-gray-800 border-b pb-2 mb-2">Our Products</h3>
+                            <h3 className="text-2xl font-bold text-[#090971] border-b pb-2 mb-2">Our <span className="text-[#739131]">Products</span></h3>
                             {[
                                 "Solar-pannel",
                                 "Solar-Pump",
@@ -84,7 +84,7 @@ const La = () => {
                                 <Link
                                     to={`/${product}`}
                                     key={i}
-                                    className="block w-full px-4 py-2 rounded-lg text-green-700 hover:text-white hover:bg-green-600 transition-all duration-200 font-medium"
+                                    className="block w-full px-4 py-2 rounded-lg text-[#C4302C] hover:text-white hover:bg-[#739131] transition-all duration-200 font-medium"
                                 >
                                     {product.replace("-", " ")} &rarr;
                                 </Link>
@@ -92,17 +92,17 @@ const La = () => {
                         </div>
 
 
-                        <div className="bg-white p-6 rounded shadow text-sm space-y-3">
+                        <div className="bg-[#090971] text-white p-6 rounded shadow text-sm space-y-3">
                             <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-700 w-20">Email:</span>
-                                <a href="mailto:info@example.com" className="text-green-700 hover:underline">
+                                <span className="font-bold text-white w-20">Email:</span>
+                                <a href="mailto:info@example.com" className="text-white hover:underline">
                                     Info@divypower.in
                                 </a>
                             </div>
 
                             <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-700 w-20">Phone:</span>
-                                <a href="tel:+011234567890" className="text-green-700 hover:underline">
+                                <span className="font-bold text-white w-20">Phone:</span>
+                                <a href="tel:+011234567890" className="text-white hover:underline">
 
 
                                     +91 9310259325
@@ -110,14 +110,14 @@ const La = () => {
                             </div>
 
                             <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-700 w-20">Address:</span>
+                                <span className="font-bold text-white w-20">Address:</span>
                                 <span>53, Ramte Ram Rd, Ekta Vihar, Arjun Nagar,
                                     Nai Basti Dundaher Ghaziabad,
                                     Uttar Pradesh 201001</span>
                             </div>
 
                             <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-700 w-20">Hours:</span>
+                                <span className="font-bold text-white w-20">Hours:</span>
                                 <span>Mon–Sat: 10:00 - 6:00<br /></span>
                             </div>
                         </div>

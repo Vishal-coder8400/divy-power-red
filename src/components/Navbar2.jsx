@@ -177,8 +177,8 @@ const Navbar2 = () => {
               to={link.path}
               className={({ isActive }) =>
                 isActive
-                  ? 'text-orange-500 font-semibold underline underline-offset-4'
-                  : 'hover:text-orange-400 transition duration-200'
+                  ? 'text-[#C4302C] font-semibold underline underline-offset-4'
+                  : 'hover:text-[#C4302C] transition duration-200'
               }
             >
               {link.name}
@@ -191,13 +191,14 @@ const Navbar2 = () => {
           {/* Call Info (Desktop) */}
           <a href="tel:+919310259325" className="flex items-center gap-2 ">
             <div className="bg-white p-2 rounded-full">
-              <FaPhoneAlt className="text-green-800" />
+              <FaPhoneAlt className="text-[#739131]" />
             </div>
             <div className="text-sm text-white">
               <p className="font-medium">Requesting A Call:</p>
               <p className="font-bold">+91 9310259325</p>
             </div>
           </a>
+
 
 
           {/* Mobile Toggle Button */}

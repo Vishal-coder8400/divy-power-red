@@ -26,7 +26,7 @@ const Earthing = () => {
                     variants={fadeUp}
                     className="text-center py-10"
                 >
-                    <h1 className="text-4xl font-bold">Safety Solutions</h1>
+                    <h1 className="text-4xl font-bold text-[#090971]">Safety <span className="text-[#739131]">Solutions</span></h1>
                 </motion.header>
 
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pb-16">
@@ -45,7 +45,7 @@ const Earthing = () => {
                             animate="visible"
                             variants={fadeUp}
                         >
-                            <h2 className="text-2xl font-semibold mb-4">Earthing</h2>
+                            <h2 className="text-2xl font-semibold mb-4 text-[#090971]">Earthing</h2>
                             <p className=' text-gray-500'>
                                At Divy Power, we understand the critical role of earthing in safeguarding electrical systems. Our high-quality earthing solutions are designed to provide a safe and efficient path for electrical faults, preventing hazardous incidents such as shocks, fires, and equipment failures. With precise engineering and premium materials, we ensure that your electrical infrastructure remains secure and reliable.
                             </p>
@@ -89,11 +89,11 @@ const Earthing = () => {
                                     variants={fadeUp}
                                     initial="hidden"
                                     animate="visible"
-                                    className="bg-white p-6 rounded shadow text-center"
+                                    className="bg-[#090971] text-white p-6 rounded shadow text-center"
                                 >
-                                    <div className="text-green-600 text-2xl font-bold">0{i + 1}</div>
+                                    <div className="text-white text-2xl font-bold">0{i + 1}</div>
                                     <div className="mt-2 font-semibold">{step}</div>
-                                    <p className="text-sm text-gray-600 mt-1">
+                                    <p className="text-sm text-white mt-1">
                                         Tactical services through market web services
                                     </p>
                                 </motion.div>
@@ -111,7 +111,7 @@ const Earthing = () => {
                             <input
                                 type="text"
                                 placeholder="Enter Keyword"
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-[#090971] rounded"
                             />
                         </motion.div>
 
@@ -121,7 +121,7 @@ const Earthing = () => {
                             variants={fadeUp}
                             className="bg-white p-6 rounded-2xl shadow-md space-y-4"
                         >
-                            <h3 className="text-2xl font-bold text-gray-800 border-b pb-2 mb-2">Our Products</h3>
+                            <h3 className="text-2xl font-bold text-[#090971] border-b pb-2 mb-2">Our <span className="text-[#739131]">Products</span></h3>
                             {[
                                 "Solar-pannel",
                                 "Solar-Pump",
@@ -133,7 +133,7 @@ const Earthing = () => {
                                 <Link
                                     to={`/${product}`}
                                     key={i}
-                                    className="block w-full px-4 py-2 rounded-lg text-green-700 hover:text-white hover:bg-green-600 transition-all duration-200 font-medium"
+                                    className="block w-full px-4 py-2 rounded-lg text-[#C4302C] hover:text-white hover:bg-[#739131] transition-all duration-200 font-medium"
                                 >
                                     {product.replace("-", " ")} &rarr;
                                 </Link>

@@ -57,7 +57,7 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
                     variants={fadeUp}
                     className="text-center py-10"
                 >
-                    <h1 className="text-4xl font-bold">Solar Solutions</h1>
+                    <h1 className="text-4xl font-bold text-[#090971]">Solar <span className="text-[#739131]">Solutions</span></h1>
                 </motion.header>
 
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pb-16">
@@ -75,7 +75,7 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
 
                         {/* Intro Text */}
                         <motion.section initial="hidden" animate="visible" variants={fadeUp}>
-                            <h2 className="text-2xl font-semibold mb-4">Solar Panel</h2>
+                            <h2 className="text-2xl font-semibold mb-4 text-[#090971]">Solar Panel</h2>
                             <p className="text-gray-500">
                                 Our solar panels are meticulously engineered to maximize energy conversion, utilizing cutting-edge photovoltaic technology to capture and transform sunlight into electricity with exceptional efficiency. By integrating advanced materials and innovative designs, we ensure each panel operates at peak performance, delivering reliable power while minimizing environmental impact.
                             </p>
@@ -119,11 +119,11 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
                                     variants={fadeUp}
                                     initial="hidden"
                                     animate="visible"
-                                    className="bg-white p-6 rounded shadow text-center"
+                                    className="bg-[#090971] p-6 rounded shadow text-center"
                                 >
-                                    <div className="text-green-600 text-2xl font-bold">0{i + 1}</div>
-                                    <div className="mt-2 font-semibold">{step}</div>
-                                    <p className="text-sm text-gray-600 mt-1">
+                                    <div className="text-white text-2xl font-bold">0{i + 1}</div>
+                                    <div className="mt-2 font-semibold text-white">{step}</div>
+                                    <p className="text-sm text-white mt-1">
                                         Tactical services through market web services
                                     </p>
                                 </motion.div>
@@ -138,8 +138,8 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
   variants={fadeUp}
   className="mt-12 space-y-8"
 >
-  <h2 className="text-4xl font-bold text-green-800 mb-6 text-center">
-    Coming Soon
+  <h2 className="text-4xl font-bold text-[#090971] mb-6 text-center">
+    Coming <span className="text-[#739131]">Soon</span>
   </h2>
   {comingSoonData.map((item, i) => (
     <div key={i} className="space-y-4">
@@ -151,7 +151,7 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
         animate="visible"
         className="text-center"
       >
-        <h3 className="text-lg font-semibold text-gray-800">
+        <h3 className="text-lg font-semibold text-[#090971]">
           {item.title}
         </h3>
        
@@ -175,16 +175,16 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
                     {/* Sidebar */}
                     <aside className="space-y-8">
                         <motion.div initial="hidden" animate="visible" variants={fadeUp} className="bg-white p-6 rounded shadow">
-                            <input type="text" placeholder="Enter Keyword" className="w-full p-2 border border-gray-300 rounded" />
+                            <input type="text" placeholder="Enter Keyword" className="w-full p-2 border border-[#090971] rounded" />
                         </motion.div>
 
                         <motion.div initial="hidden" animate="visible" variants={fadeUp} className="bg-white p-6 rounded-2xl shadow-md space-y-4">
-                            <h3 className="text-2xl font-bold text-gray-800 border-b pb-2 mb-2">Our Products</h3>
+                            <h3 className="text-2xl font-bold text-[#090971] border-b pb-2 mb-2">Our <span className="text-[#739131]">Products</span></h3>
                             {["Solar-Pump", "Micro-Inverter", "Earthing", "LA", "Diesel/Petrol Genset"].map((product, i) => (
                                 <Link
                                     to={`/${product}`}
                                     key={i}
-                                    className="block w-full px-4 py-2 rounded-lg text-green-700 hover:text-white hover:bg-green-600 transition-all duration-200 font-medium"
+                                    className="block w-full px-4 py-2 rounded-lg text-[#C4302C] hover:text-white hover:bg-[#739131] transition-all duration-200 font-medium"
                                 >
                                     {product.replace("-", " ")} &rarr;
                                 </Link>
@@ -193,8 +193,8 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
 
                         <motion.div className="bg-white p-6 rounded shadow text-sm space-y-3">
                             <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-700 w-20">Email:</span>
-                                <a href="mailto:Info@divypower.com" className="text-green-700 hover:underline">Info@divypower.com</a>
+                                <span className="font-bold text- w-20 text-[#090971]">Email:</span>
+                                <a href="mailto:Info@divypower.com" className="text-[#C4302C] hover:underline">Info@divypower.com</a>
                             </div>
                         </motion.div>
                     </aside>

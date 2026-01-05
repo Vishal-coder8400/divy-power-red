@@ -16,19 +16,19 @@ const AddOurServices = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-extrabold text-gray-900"
+          className="text-4xl md:text-5xl font-extrabold text-[#090971]"
         >
-          Add Our Services
+          Add Our <span className="text-[#739131]">Services</span>
         </motion.h1>
 
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="mt-4 text-3xl md:text-4xl font-bold text-gray-800 leading-tight"
+          className="mt-4 text-3xl md:text-4xl font-bold text-[#090971] leading-tight"
         >
           Expand Your Business. {" "}
-          <span className="font-extrabold text-green-800">
+          <span className="font-extrabold text-[#739131]">
             Offer Solar Solutions with Divy Power
           </span>.
         </motion.h2>
@@ -46,14 +46,15 @@ const AddOurServices = () => {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="mx-auto mt-6 h-1 w-24 origin-left rounded-full bg-green-700"
+          className="mx-auto mt-6 h-1 w-24 origin-left rounded-full bg-[#C4302C]"
         />
       </section>
+      
 
       {/* Why Add Our Services */}
       <section className="bg-[#f8f7f0] ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-black">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[#090971]">
             Why Add Our Services
           </h2>
           <ul className="list-disc list-inside space-y-3 text-lg text-gray-700">
@@ -71,7 +72,7 @@ const AddOurServices = () => {
 
       {/* Work Models */}
       <section className="py-12 max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-black">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[#090971]">
           Work Models Available
         </h2>
         <ul className="list-disc list-inside space-y-3 text-lg text-gray-700">
@@ -84,7 +85,7 @@ const AddOurServices = () => {
       {/* Industries */}
       <section className="bg-[#f8f7f0] ">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-black">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[#090971]">
             Industries That Benefit Most
           </h2>
           <ul className="list-disc list-inside space-y-3 text-lg text-black">
@@ -99,7 +100,7 @@ const AddOurServices = () => {
 
       {/* Authorization Steps */}
       <section className="py-12 max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-black">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[#090971]">
           Authorization Steps
         </h2>
         <ol className="list-decimal list-inside space-y-3 text-lg text-black max-w-3xl mx-auto">
@@ -117,7 +118,7 @@ const AddOurServices = () => {
         <motion.button 
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
-          className="bg-green-700 text-white px-10 py-4 rounded-full text-xl font-semibold hover:bg-green-800 transition"
+          className="bg-[#739131] text-white px-10 py-4 rounded-full text-xl font-semibold hover:bg-[#739131] transition"
         >
           Add Solar to Your Business Today
         </motion.button>

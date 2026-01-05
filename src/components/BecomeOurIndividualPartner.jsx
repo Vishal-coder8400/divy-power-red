@@ -16,9 +16,9 @@ const BecomeOurIndividualPartner = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900"
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-[#090971]"
         >
-          Become Our Individual Partner
+          Become Our Individual <span className="text-[#739131]">Partner</span>
         </motion.h1>
 
         {/* Sub Heading (as requested) */}
@@ -26,9 +26,9 @@ const BecomeOurIndividualPartner = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800"
+          className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold text-[#090971]"
         >
-          Earn with Divy Power. <span className=" text-green-800">No Investment Required.</span>
+          Earn with Divy Power. <span className=" text-[#739131]">No Investment Required.</span>
         </motion.h1>
 
         <motion.p
@@ -45,7 +45,7 @@ const BecomeOurIndividualPartner = () => {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="mx-auto mt-6 h-1 w-24 origin-left rounded-full bg-green-700"
+          className="mx-auto mt-6 h-1 w-24 origin-left rounded-full bg-[#C4302C]"
         />
       </section>
 
@@ -57,7 +57,7 @@ const BecomeOurIndividualPartner = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
-            className="text-2xl md:text-3xl font-bold mb-4 text-black"
+            className="text-2xl md:text-3xl font-bold mb-4 text-[#090971]"
           >
             How It Works
           </motion.h2>
@@ -82,7 +82,7 @@ const BecomeOurIndividualPartner = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="text-2xl md:text-3xl font-bold mb-6 text-black"
+          className="text-2xl md:text-3xl font-bold mb-6 text-[#090971]"
         >
           Work Models Available
         </motion.h2>
@@ -107,10 +107,10 @@ const BecomeOurIndividualPartner = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5"
+              className="rounded-2xl bg-[#090971] text-white p-6 shadow-sm ring-1 ring-black/5"
             >
-              <h3 className="text-lg font-semibold text-gray-900">{card.title}</h3>
-              <p className="mt-2 text-gray-600">{card.desc}</p>
+              <h3 className="text-lg font-semibold text-white">{card.title}</h3>
+              <p className="mt-2 text-white">{card.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -124,7 +124,7 @@ const BecomeOurIndividualPartner = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
-            className="text-2xl md:text-3xl font-bold mb-6 text-black"
+            className="text-2xl md:text-3xl font-bold mb-6 text-[#090971]"
           >
             Benefits for You
           </motion.h2>
@@ -150,7 +150,7 @@ const BecomeOurIndividualPartner = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="text-2xl md:text-3xl font-bold mb-4 text-black"
+          className="text-2xl md:text-3xl font-bold mb-4 text-[#090971]"
         >
           Who Can Join
         </motion.h2>
@@ -175,7 +175,7 @@ const BecomeOurIndividualPartner = () => {
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
-          className="bg-green-700 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-800 transition"
+          className="bg-[#739131] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#739131] transition"
         >
           Start Earning as a Partner
         </motion.button>

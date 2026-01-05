@@ -34,7 +34,7 @@ const InstallationServiceAltLayout = () => {
 
             {/* Services Grid */}
             <section className="max-w-7xl mx-auto px-6 pt-12 pb-2">
-                <h2 className="text-3xl font-bold text-center text-black mb-10"> Our Services</h2>
+                <h2 className="text-3xl font-bold text-center text-[#090971] mb-10"> Our <span className="text-[#739131]">Services</span></h2>
                 {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     {services.map((service, idx) => (
                         <motion.div
@@ -66,14 +66,14 @@ const InstallationServiceAltLayout = () => {
                     className="rounded-xl mb-6 w-full max-h-[400px] object-cover"
                 />
 
-                <h2 className="text-2xl font-bold text-blue-900 mb-4">Installation & Commissioning (INC)</h2>
+                <h2 className="text-2xl font-bold text-[#090971] mb-4">Installation & Commissioning <span className="text-[#739131]">(INC)</span></h2>
                 <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                     At Divy Power, we manage the complete installation and commissioning of solar systems,
                     generators, and energy equipment. Our team ensures every part is installed and tested correctly,
                     so your system performs seamlessly from day one.
                 </p>
 
-                <ul className="list-disc pl-6 text-sm mb-4 text-gray-700 marker:text-blue-900">
+                <ul className="list-disc pl-6 text-sm mb-4 text-gray-700 marker:text-[#090971]">
                     <li>Creating a Balanced and Nutritious Setup</li>
                     <li>The Importance of System Hydration (Cooling & Maintenance)</li>
                     <li>Connection Between Clean Energy & Mental Peace</li>
@@ -85,27 +85,27 @@ const InstallationServiceAltLayout = () => {
                     custom system configuration, rigorous quality checks, and operational guidance.
                 </p>
 
-                <h3 className="text-lg font-semibold text-blue-900 ">Our Simple Four Steps</h3>
+                <h3 className="text-lg font-semibold text-[#090971] ">Our Simple Four Steps</h3>
                 <p className="text-sm text-gray-700">
                     Whether you're installing at home, at a factory, or a corporate site,
                     Divy Power ensures minimal downtime and maximum efficiency. We’re committed
                     to making sustainable energy easy, accessible, and reliable.
                 </p>
             </main>
-              <section className="max-w-7xl mx-auto px-6 pb-12">
+              <section className="max-w-7xl mx-auto px-6 pb-12 ">
                 {/* <h2 className="text-3xl font-bold text-center text-white mb-10">🔧 Our Services</h2> */}
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     {services.map((service, idx) => (
                         <motion.div
                             key={idx}
                             whileHover={{ scale: 1.05 }}
-                            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
+                            className="bg-[#090971] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
                         >
                             {service.icon}
-                            <h3 className="font-semibold text-lg mt-4 mb-2 text-blue-900">{service.label}</h3>
+                            <h3 className="font-semibold text-lg mt-4 mb-2 text-white">{service.label}</h3>
                             <Link
                                 to={`/${service.path}`}
-                                className="mt-auto text-blue-900 font-medium hover:underline"
+                                className="mt-auto text-white font-medium hover:underline"
                             >
                                 Explore →
                             </Link>

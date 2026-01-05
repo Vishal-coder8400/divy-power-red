@@ -28,7 +28,7 @@ const SolarPumpPage = () => {
                     variants={fadeUp}
                     className="text-center py-10"
                 >
-                    <h1 className="text-4xl font-bold">Solar Solutions</h1>
+                    <h1 className="text-4xl font-bold text-[#090971]">Solar <span className="text-[#739131]">Solutions</span></h1>
                 </motion.header>
 
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pb-16">
@@ -47,7 +47,7 @@ const SolarPumpPage = () => {
                             animate="visible"
                             variants={fadeUp}
                         >
-                            <h2 className="text-2xl font-semibold mb-4">SOLAR PUMP</h2>
+                            <h2 className="text-2xl font-semibold mb-4 text-[#090971]">SOLAR PUMP</h2>
                             <p className='text-gray-500'>
                                 Divy Power’s solar pumps offer a reliable and sustainable solution for water pumping needs in remote areas, farms, and rural locations. Engineered for efficiency, these pumps operate entirely on solar energy, eliminating dependency on conventional power sources. This makes them an excellent choice for communities and agricultural setups seeking eco-friendly water solutions while reducing operational costs.
                             </p>
@@ -91,11 +91,11 @@ const SolarPumpPage = () => {
                                     variants={fadeUp}
                                     initial="hidden"
                                     animate="visible"
-                                    className="bg-white p-6 rounded shadow text-center"
+                                    className="bg-[#090971] text-white p-6 rounded shadow text-center"
                                 >
-                                    <div className="text-green-600 text-2xl font-bold">0{i + 1}</div>
+                                    <div className="text-white text-2xl font-bold">0{i + 1}</div>
                                     <div className="mt-2 font-semibold">{step}</div>
-                                    <p className="text-sm text-gray-600 mt-1">
+                                    <p className="text-sm text-white mt-1">
                                         Tactical services through market web services
                                     </p>
                                 </motion.div>
@@ -113,7 +113,7 @@ const SolarPumpPage = () => {
                             <input
                                 type="text"
                                 placeholder="Enter Keyword"
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-[#090971] rounded"
                             />
                         </motion.div>
 
@@ -123,7 +123,7 @@ const SolarPumpPage = () => {
                             variants={fadeUp}
                             className="bg-white p-6 rounded-2xl shadow-md space-y-4"
                         >
-                            <h3 className="text-2xl font-bold text-gray-800 border-b pb-2 mb-2">Our Products</h3>
+                            <h3 className="text-2xl font-bold text-[#090971] border-b pb-2 mb-2">Our <span className="text-[#739131]">Products</span></h3>
                             {[
                                 "Solar-pannel",
                                 "Micro-Inverter",
@@ -135,7 +135,7 @@ const SolarPumpPage = () => {
                                 <Link
                                     to={`/${product}`}
                                     key={i}
-                                    className="block w-full px-4 py-2 rounded-lg text-green-700 hover:text-white hover:bg-green-600 transition-all duration-200 font-medium"
+                                    className="block w-full px-4 py-2 rounded-lg text-[#C4302C] hover:text-white hover:bg-[#739131] transition-all duration-200 font-medium"
                                 >
                                     {product.replace("-", " ")} &rarr;
                                 </Link>

@@ -26,7 +26,7 @@ const MicroInverter = () => {
           variants={fadeUp}
           className="text-center py-10"
         >
-          <h1 className="text-4xl font-bold">Solar Solutions</h1>
+          <h1 className="text-4xl font-bold text-[#090971]">Solar <span className="text-[#739131]">Solutions</span></h1>
         </motion.header>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pb-16">
@@ -41,7 +41,7 @@ const MicroInverter = () => {
             />
 
             <motion.section initial="hidden" animate="visible" variants={fadeUp}>
-              <h2 className="text-2xl font-semibold mb-4">Micro Inverter</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-[#090971]">Micro <span className="text-[#739131]">Inverter</span></h2>
               <p className=' text-gray-500'>
                 Our micro inverters are engineered to enhance the efficiency and reliability of your solar panel system, providing a cutting-edge solution for energy conversion. Unlike conventional inverters that process power for an entire solar array, micro inverters operate individually on each panel, ensuring that every module functions at peak performance. This decentralized approach eliminates energy losses caused by shading or varying panel efficiency, making them an ideal choice for maximizing solar output.
               </p>
@@ -81,11 +81,11 @@ const MicroInverter = () => {
                   variants={fadeUp}
                   initial="hidden"
                   animate="visible"
-                  className="bg-white p-6 rounded shadow text-center"
+                  className="bg-[#090971] text-white p-6 rounded shadow text-center"
                 >
-                  <div className="text-green-600 text-2xl font-bold">0{i + 1}</div>
+                  <div className="text-white text-2xl font-bold">0{i + 1}</div>
                   <div className="mt-2 font-semibold">{step}</div>
-                  <p className="text-sm text-gray-600 mt-1">
+                  <p className="text-sm text-white mt-1">
                     Tactical services through market web services
                   </p>
                 </motion.div>
@@ -103,7 +103,7 @@ const MicroInverter = () => {
               <input
                 type="text"
                 placeholder="Enter Keyword"
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-[#090971] rounded"
               />
             </motion.div>
 
@@ -124,7 +124,7 @@ const MicroInverter = () => {
                 <Link
                   to={`/${product}`}
                   key={i}
-                  className="block w-full px-4 py-2 rounded-lg text-green-700 hover:text-white hover:bg-green-600 transition-all duration-200 font-medium"
+                  className="block w-full px-4 py-2 rounded-lg text-[#C4302C] hover:text-white hover:bg-[#739131] transition-all duration-200 font-medium"
                 >
                   {product.replace("-", " ")} &rarr;
                 </Link>
@@ -135,8 +135,8 @@ const MicroInverter = () => {
 
             <motion.div className="bg-white p-6 rounded shadow text-sm space-y-3">
               <div className="flex items-start gap-2">
-                <span className="font-bold text-gray-700 w-20">Email:</span>
-                <a href="mailto:info@example.com" className="text-green-700 hover:underline">
+                <span className="font-bold text-[#090971] w-20">Email:</span>
+                <a href="mailto:info@example.com" className="text-[#C4302C] hover:underline">
                   Info@divypower.com
 
                 </a>
