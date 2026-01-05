@@ -37,7 +37,7 @@ const ChatbotToggle = () => {
     <>
       <div className="fixed bottom-1 right-1 flex items-center space-x-3 z-50">
         {showPopup && (
-          <div className="animate-scaleUp flex items-center bg-green-800 border-l-4 border-orange-500 text-white px-5 py-4 rounded-xl shadow-2xl text-sm md:text-base font-semibold max-w-sm min-h-[100px]">
+          <div className="animate-scaleUp flex items-center bg-[#739131] border-l-4 border-[#739131] text-white px-5 py-4 rounded-xl shadow-2xl text-sm md:text-base font-semibold max-w-sm min-h-[100px]">
             <img
               src={solarch}
               alt="Solar Chacha"
