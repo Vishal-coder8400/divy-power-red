@@ -19,7 +19,7 @@ const fadeUp = {
 const Earthing = () => {
     return (
         <>
-            <div className="bg-gray-50 text-gray-800 font-sans py-20">
+            <div className="bg-gray-50 text-gray-800 font-sans py-0">
                 <motion.header
                     initial="hidden"
                     animate="visible"

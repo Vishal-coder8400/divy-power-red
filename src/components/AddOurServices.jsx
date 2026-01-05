@@ -11,7 +11,7 @@ const AddOurServices = () => {
   return (
     <div className="bg-[#f8f7f0] text-gray-800 font-inter">
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
+      <section className="max-w-6xl mx-auto px-6 py-8 text-center">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

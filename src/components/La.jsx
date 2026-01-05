@@ -9,7 +9,7 @@ import LA from '../Images/LA.jpg';
 const La = () => {
     return (
         <>
-            <div className="bg-gray-50 text-gray-800 font-sans py-20">
+            <div className="bg-gray-50 text-gray-800 font-sans py-0">
                 <header className="text-center py-10">
                     <h1 className="text-4xl font-bold text-[#090971]">Safety <span className="text-[#739131]">Solutions</span></h1>
                 </header>

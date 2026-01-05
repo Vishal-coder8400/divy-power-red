@@ -49,7 +49,7 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
 
     return (
         <>
-            <div className="bg-gray-50 text-gray-800 font-sans py-20">
+            <div className="bg-gray-50 text-gray-800 font-sans py-0">
                 {/* Header */}
                 <motion.header
                     initial="hidden"

@@ -29,11 +29,11 @@ const services = [
 
 const InstallationServiceAltLayout = () => {
     return (
-        <div className="bg-gray-100 text-white min-h-screen GetfontHome mb-2 mt-0 lg:mt-20 md:mt-20 xl:mt-20 2xl:mt-20">
+        <div className="bg-gray-100 text-white min-h-screen GetfontHome mb-2 mt-0 lg:mt-0 md:mt-0 xl:mt-0 2xl:mt-0">
 
 
             {/* Services Grid */}
-            <section className="max-w-7xl mx-auto px-6 pt-12 pb-2">
+            <section className="max-w-7xl mx-auto px-6 pt-5 pb-2">
                 <h2 className="text-3xl font-bold text-center text-[#090971] mb-10"> Our <span className="text-[#739131]">Services</span></h2>
                 {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     {services.map((service, idx) => (
@@ -105,7 +105,7 @@ const InstallationServiceAltLayout = () => {
                             <h3 className="font-semibold text-lg mt-4 mb-2 text-white">{service.label}</h3>
                             <Link
                                 to={`/${service.path}`}
-                                className="mt-auto text-white font-medium hover:underline"
+                                className="mt-auto text-[#739131] font-medium hover:underline"
                             >
                                 Explore →
                             </Link>

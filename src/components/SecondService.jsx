@@ -29,11 +29,11 @@ const services = [
 
 const SecondService = () => {
   return (
-    <div className="bg-gray-100 text-white min-h-screen GetfontHome mb-2 mt-0 lg:mt-20 md:mt-20 xl:mt-20 2xl:mt-20">
+    <div className="bg-gray-100 text-white min-h-screen GetfontHome mb-2 mt-0 lg:mt-0 md:mt-0 xl:mt-0 2xl:mt-0">
     
 
       {/* Services Grid */}
-      <section className="max-w-7xl mx-auto px-6 pt-12">
+      <section className="max-w-7xl mx-auto px-6 pt-5">
         <h2 className="text-3xl font-bold text-center text-[#090971] mb-10">Our <span className="text-[#739131]">Services</span></h2>
         {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, idx) => (
