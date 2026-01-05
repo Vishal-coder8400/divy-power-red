@@ -218,7 +218,7 @@ const Navbar2 = () => {
             <NavLink
               key={link.name}
               to={link.path}
-              className="block text-base font-medium text-white hover:text-orange-400"
+              className="block text-base font-medium text-white hover:text-[#C4302C]"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}
@@ -231,7 +231,7 @@ const Navbar2 = () => {
           {/* Mobile Call Info */}
           <div className="flex items-center gap-2">
             <div className="bg-white p-2 rounded-full">
-              <FaPhoneAlt className="text-green-800" />
+              <FaPhoneAlt className="text-[#C4302C]" />
             </div>
             <div className="text-sm text-white">
               <p className="font-medium">Requesting A Call:</p>
