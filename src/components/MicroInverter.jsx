@@ -49,22 +49,43 @@ const MicroInverter = () => {
                 By optimizing energy conversion at the panel level, our micro inverters significantly improve the overall productivity of your system. Even if some panels are partially shaded or experience efficiency variations, the rest continue to generate power without disruption. This makes them particularly beneficial for installations in areas with unpredictable sunlight exposure or complex roof layouts, ensuring maximum energy yield throughout the day.
               </p>
             </motion.section>
-            <div className="flex items-start gap-6">
-              <motion.img
-                initial="hidden"
-                animate="visible"
-                variants={fadeUp}
-                src="https://divyby.redspace.in/assets/images/updated-images/inverter%201.png"
-                alt="Solar Panels Field"
-                className="w-[380px] h-[270px] rounded shadow"
-              />
+          <div className="flex flex-col lg:flex-row items-start gap-4 sm:gap-6">
+  <motion.img
+    initial="hidden"
+    animate="visible"
+    variants={fadeUp}
+    src="https://divyby.redspace.in/assets/images/updated-images/inverter%201.png"
+    alt="Solar Panels Field"
+    className="
+      w-full
+      sm:max-w-[420px]
+      lg:w-[380px]
+      h-auto
+      max-h-[270px]
+      rounded
+      shadow
+      object-cover
+    "
+  />
 
-              <motion.section initial="hidden" animate="visible" variants={fadeUp}>
-                <p className=' text-gray-500'>
-                  Reliability is a core feature of our micro inverters, built with advanced technology to withstand diverse environmental conditions. Their durable design ensures long-term performance while reducing the risks associated with a single point of failure—common in traditional centralized inverter systems. With built-in monitoring capabilities, users can track real-time energy production, allowing for proactive maintenance and efficiency adjustments.
-                </p>
-              </motion.section>
-            </div>
+  <motion.section
+    initial="hidden"
+    animate="visible"
+    variants={fadeUp}
+    className="w-full"
+  >
+    <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+      Reliability is a core feature of our micro inverters, built with advanced
+      technology to withstand diverse environmental conditions. Their durable
+      design ensures long-term performance while reducing the risks associated
+      with a single point of failure—common in traditional centralized inverter
+      systems. With built-in monitoring capabilities, users can track real-time
+      energy production, allowing for proactive maintenance and efficiency
+      adjustments.
+    </p>
+  </motion.section>
+</div>
+
             <p className="mt-4 text-gray-500">
               Perfect for homeowners and businesses alike, our micro inverters offer a scalable and cost-effective solar solution. Whether you’re installing a residential system to lower electricity bills or implementing a commercial setup for sustainable energy use, micro inverters ensure the highest return on investment. Their ability to provide consistent power output, along with superior adaptability, makes them a smart choice for those looking to optimize their solar energy potential.
             </p>

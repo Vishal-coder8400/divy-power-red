@@ -85,21 +85,41 @@ Ground Mount or Utility Scale solar systems are large-scale installations set up
                         </motion.section>
 
                         {/* Side Image + Paragraph */}
-                        <div className="flex items-start gap-6">
-                            <motion.img
-                                initial="hidden"
-                                animate="visible"
-                                variants={fadeUp}
-                                src={Lap}
-                                alt="Solar Panels Field"
-                                className="w-[380px] h-[270px] rounded shadow"
-                            />
-                            <motion.section initial="hidden" animate="visible" variants={fadeUp}>
-                                <p className=" text-gray-500">
-                                    Longevity and durability are at the core of our solar panel offerings. Built to withstand harsh weather conditions and maintain consistent output over years of use, our panels provide a dependable energy solution. Their robust construction and high-quality components ensure minimal degradation, offering long-lasting power generation with minimal maintenance.
-                                </p>
-                            </motion.section>
-                        </div>
+                    <div className="flex flex-col lg:flex-row items-start gap-4 sm:gap-6">
+  <motion.img
+    initial="hidden"
+    animate="visible"
+    variants={fadeUp}
+    src={Lap}
+    alt="Solar Panels Field"
+    className="
+      w-full 
+      sm:max-w-[420px] 
+      lg:w-[380px]
+      h-auto 
+      max-h-[270px]
+      rounded 
+      shadow 
+      object-cover
+    "
+  />
+
+  <motion.section
+    initial="hidden"
+    animate="visible"
+    variants={fadeUp}
+    className="w-full"
+  >
+    <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+      Longevity and durability are at the core of our solar panel offerings.
+      Built to withstand harsh weather conditions and maintain consistent
+      output over years of use, our panels provide a dependable energy solution.
+      Their robust construction and high-quality components ensure minimal
+      degradation, offering long-lasting power generation with minimal
+      maintenance.
+    </p>
+  </motion.section>
+</div>
 
                         <p className="mt-4 text-gray-500">
                             Beyond financial savings, adopting solar energy contributes significantly to environmental preservation. By reducing carbon emissions and reliance on fossil fuels, our panels help create a cleaner, greener future. Investing in solar is not just a smart choice for energy efficiency—it’s a commitment to sustainability and responsible energy consumption.
